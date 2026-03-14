@@ -1,0 +1,264 @@
+[gd_scene format=3 uid="uid://ctm8jtu3fx7oq"]
+
+[ext_resource type="Script" uid="uid://cvenegfv5mof" path="res://Redactor/Redactor_C/Scripts/main.gd" id="1_1nydr"]
+[ext_resource type="Texture2D" uid="uid://bd273qpmumvlt" path="res://Redactor/Imported/WhatsApp Image 2026-03-13 at 16.33.35.jpeg" id="3_8bw2r"]
+[ext_resource type="FontFile" uid="uid://c5tcudaromrub" path="res://Redactor/Styles/Xolonium-Regular.ttf" id="3_a8v7n"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8bw2r"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.08627451, 0.08627451, 0.08627451, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s83p8"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+border_width_left = 1569325056
+border_width_top = 1569325056
+border_width_right = 1569325056
+border_width_bottom = 1569325056
+border_color = Color(0.08627451, 0.08627451, 0.08627451, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7v4wg"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.1, 0.1, 0.1, 0.6)
+border_width_left = 100000000
+border_width_top = 100000000
+border_width_right = 100000000
+border_width_bottom = 100000000
+border_color = Color(0.14767197, 0.14767176, 0.14767179, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nnywb"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.16206557, 0.1620656, 0.16206554, 1)
+border_width_left = 1569325056
+border_width_top = 1569325056
+border_width_right = 1569325056
+border_width_bottom = 1569325056
+border_color = Color(0.24705882, 0.24705882, 0.24705882, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a8v7n"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.24705882, 0.24705882, 0.24705882, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[node name="Redactor" type="Node2D" unique_id=732383066]
+
+[node name="Control" type="Control" parent="." unique_id=209627302]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1161.0
+offset_bottom = 658.0
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel" type="Panel" parent="Control" unique_id=414449090]
+layout_mode = 0
+offset_right = 1161.0
+offset_bottom = 658.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8bw2r")
+
+[node name="CodePanel" type="Panel" parent="Control/Panel" unique_id=973842601]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 8.0
+offset_top = 7.0
+offset_right = 799.0
+offset_bottom = 467.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_s83p8")
+script = ExtResource("1_1nydr")
+metadata/_edit_use_anchors_ = true
+
+[node name="CodeEdit" type="CodeEdit" parent="Control/Panel/CodePanel" unique_id=1914496899]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.00505689
+anchor_top = -0.002173913
+anchor_right = -0.00505689
+anchor_bottom = -0.002173913
+offset_right = 795.0
+offset_bottom = 460.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_7v4wg")
+metadata/_edit_use_anchors_ = true
+
+[node name="Output" type="Panel" parent="Control/Panel" unique_id=125835505]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 474.0
+offset_right = 969.0
+offset_bottom = 643.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_nnywb")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="TextEdit" parent="Control/Panel/Output" unique_id=64766156]
+layout_mode = 0
+offset_right = 961.0
+offset_bottom = 170.0
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("3_a8v7n")
+editable = false
+metadata/_edit_use_anchors_ = true
+
+[node name="Output2" type="Panel" parent="Control/Panel" unique_id=631598083]
+layout_mode = 0
+offset_left = 976.0
+offset_top = 475.0
+offset_right = 1145.0
+offset_bottom = 643.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_nnywb")
+metadata/_edit_use_anchors_ = true
+
+[node name="ItemList" type="ItemList" parent="Control/Panel/Output2" unique_id=337888130]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 12.0
+offset_right = 163.0
+offset_bottom = 87.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ItemList2" type="ItemList" parent="Control/Panel/Output2" unique_id=2001372261]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 89.0
+offset_right = 163.0
+offset_bottom = 163.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Control/Panel/Output2" unique_id=32432393]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 90.0
+offset_right = 163.0
+offset_bottom = 164.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="Control/Panel/Output2" unique_id=1746510626]
+layout_mode = 0
+offset_left = 63.0
+offset_top = -2.0
+offset_right = 107.0
+offset_bottom = 14.0
+theme_override_fonts/font = ExtResource("3_a8v7n")
+theme_override_font_sizes/font_size = 12
+text = "Joined"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label3" type="Label" parent="Control/Panel/Output2" unique_id=170837083]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 157.0
+offset_right = 117.0
+offset_bottom = 171.0
+theme_override_fonts/font = ExtResource("3_a8v7n")
+theme_override_font_sizes/font_size = 11
+text = "Compiling"
+metadata/_edit_use_anchors_ = true
+
+[node name="AI" type="Panel" parent="Control/Panel" unique_id=1358701330]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.0015243902
+anchor_bottom = 0.0015243902
+offset_left = 976.0
+offset_top = 6.0
+offset_right = 1145.0
+offset_bottom = 466.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_a8v7n")
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Control/Panel/AI" unique_id=1493796578]
+position = Vector2(84.49998, 229.99695)
+scale = Vector2(0.22961958, 0.625)
+texture = ExtResource("3_8bw2r")
+
+[node name="Button" type="Button" parent="Control/Panel" unique_id=570888385]
+layout_mode = 0
+offset_left = 864.0
+offset_top = 480.0
+offset_right = 964.0
+offset_bottom = 508.0
+theme_override_fonts/font = ExtResource("3_a8v7n")
+text = "Clear log"
+
+[node name="CanvasLayer" type="Panel" parent="Control" unique_id=1159609949]
+layout_mode = 0
+
+[node name="AI2" type="Panel" parent="Control/CanvasLayer" unique_id=2069552208]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.1720971
+anchor_top = 0.0045592706
+anchor_right = -0.1720971
+anchor_bottom = 0.7128926
+offset_left = 805.896
+offset_top = 7.0
+offset_right = 805.896
+offset_bottom = 7.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_a8v7n")
+metadata/_edit_use_anchors_ = true
+
+[node name="ItemList" type="ItemList" parent="Control/CanvasLayer/AI2" unique_id=670107017]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 59.0
+offset_right = 156.0
+offset_bottom = 267.0
+
+[node name="Button" type="Button" parent="Control/CanvasLayer/AI2" unique_id=2034832089]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.024539877
+anchor_right = -0.024539877
+offset_left = 50.0
+offset_top = 3.0
+offset_right = 160.0
+offset_bottom = 43.0
+theme_override_fonts/font = ExtResource("3_a8v7n")
+text = "RUN"
+metadata/_edit_use_anchors_ = true
+
+[node name="Tree" type="Tree" parent="Control/CanvasLayer" unique_id=384267313]
+layout_mode = 0
+offset_left = 811.0
+offset_top = 283.0
+offset_right = 961.0
+offset_bottom = 460.0
+
+[connection signal="pressed" from="Control/Panel/Button" to="Control/Panel/CodePanel" method="_on_button_pressed"]
